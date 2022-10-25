@@ -24,6 +24,7 @@ module.exports = {
         blue0e2: "#0a2540e2",
         bluebff: "#635bff",
         blue00d: "#00d4ff",
+        blueccd: "#5bccde",
         blueele: "rgb(225, 235, 250)",
         blue6ff: "#c6dbff",
         greenba9: "#459ba9",
@@ -39,6 +40,7 @@ module.exports = {
 
       width: {
         fit: "fit-content",
+        "100r": "100rem",
         "40r": "40rem",
         "32r": "32rem",
         "30r": "30rem",
