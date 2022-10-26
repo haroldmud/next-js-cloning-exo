@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { Fragment } from 'react';
 import Header from './header';
 import Button from './button';
+import Footer from './footer';
 
 
 export default function Home() {
@@ -44,7 +45,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex justify-center pb-32">
+      <section className="flex relative justify-center pb-32 mt-32">
             <div className="flex items-center w-4/6 mt-8 ">
               <div className= "h-fit">
                 <img className="w-[120rem] pt-20" src="/images/image1.png"/>
@@ -60,10 +61,11 @@ export default function Home() {
                   vel ultrices in, congue sed ex.
                 </p>
               <Button style={'bg-greenba9 -ml-[21rem] rounded-3s px-6 py-2 text-white hover:bg-green6a6 font-semibold'} value={'Explore'}/>
+              <img className='w-[60rem] absolute -top-20 left-32 border-t border-b  border-green6a6' src='/icons/icon5.png'/>
               </div>
             </div>
           </section>
-          <section className="flex justify-center pb-32 mt-80">
+          <section className="flex justify-center pb-32 mt-72">
             <div className="flex items-center w-4/6 mt-8 ">
               <div className="flex flex-col gap-4  mt-20 ml-4">
                 <h3 className="text-xs text-blueccd " >Available Properties</h3>
@@ -84,11 +86,55 @@ export default function Home() {
           </section>
 
 
-          <section>
-            <h3 className="text-xs text-blueccd text-center " >Socials</h3>
+          <section className='mt-44 pb-44'>
+            <h3 className="text-xs text-blueccd text-center mb-4" >Socials</h3>
             <h1 className="text-2xl text-green6a6 font-bold text-center ">On Instagram</h1>
+            <div className='flex justify-center mt-12'>
+             <img src='/images/photos3.png'/>
+            </div>
           </section>
+
+          <section>
+            <div className='ml-32 mt-20 flex gap-56'>
+              <div>
+              <h3 className="text-xs text-blueccd mb-4 mt-12" >Contact</h3>
+              <h1 className="text-2xl text-green6a6 font-bold">On Instagram</h1>
+                <div className='flex p-8 gap-4 w-72 '>
+                  <div>
+                    <img className='w-50s' src='/icons/icon6.png'/>
+                  </div>
+                  <div>
+                  <h2 className='font-bold text-xl'>Tel</h2>
+                  <p className=' font-semibold'>708-790-0000</p>
+                  </div>
+                </div>
+                <div className='flex p-8 gap-4 w-72'>
+                  <div>
+                    <img className='w-50s' src='/icons/icon7.png'/>
+                  </div>
+                  <div>
+                  <h2 className='font-bold text-xl'>Email</h2>
+                  <p className=' font-semibold'>sales@buildit.site</p>
+                  </div>
+                </div>
+                <div className='flex p-8 gap-4 w-72 '>
+                  <div>
+                    <img className='w-[95px]' src='/icons/icon7.png'/>
+                  </div>
+                  <div>
+                  <h2 className='font-bold text-xl'>Office</h2>
+                  <p className=' font-semibold'>60 Manor Station St.Fairport, NY 14450</p>
+                  </div>
+                </div>
+              </div>
+              <div className=' mt-20'>
+                <img className='w-30r' src='/images/input.png'/>
+              </div>
+            </div>
+          </section>
+          <Footer/>
     </section>
+    
   </Fragment>
   )
 }

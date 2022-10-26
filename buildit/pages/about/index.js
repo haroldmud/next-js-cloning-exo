@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import Header from "../header";
-
+import Footer from "../footer";
 
 
 function Info () {
@@ -26,6 +26,7 @@ function Info () {
               </div>
             </div>
           </section>
+          <Footer/>
         </section>
       </Fragment>
     )
