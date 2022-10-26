@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer {
+  .header {
+    @apply text-3xl font-bold underline text-blue-500;
+  }
+}
+
+
+.index1 {
+  z-index: 10;
+}
+
+.index2 {
+  z-index: 1;
+}
