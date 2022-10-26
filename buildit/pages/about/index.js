@@ -26,7 +26,7 @@ function Info () {
               </div>
             </div>
           </section>
-          <Footer/>
+          
         </section>
       </Fragment>
     )
